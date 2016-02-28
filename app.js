@@ -6,8 +6,8 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var login = require('./routes/login');
 var users = require('./routes/users');
-var users = require('./routes/login');
 
 var app = express();
 
@@ -30,7 +30,7 @@ app.use(require('node-sass-middleware')({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/login', users);
+app.use('/login', login);
 app.use('/users', users);
 
 
