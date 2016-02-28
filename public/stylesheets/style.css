@@ -8,6 +8,16 @@ a {
 .loginForm {
   top: 50%;
   left: 50%; }
+  .loginForm ::-webkit-input-placeholder {
+    color: #D4D6D9; }
+  .loginForm :-ms-input-placeholder {
+    color: #D4D6D9; }
+  .loginForm ::-moz-placeholder {
+    color: #D4D6D9;
+    opacity: 1; }
+  .loginForm :-moz-placeholder {
+    color: #D4D6D9;
+    opacity: 1; }
   .loginForm label {
     margin: 30px 0px 15px 0px;
     display: inline-block; }
@@ -16,16 +26,16 @@ a {
     margin-top: 30px;
     width: 200px; }
   .loginForm input {
-    padding: 15px;
+    padding: 15px 0px;
     width: 500px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid blue; }
+    border-bottom: 1px solid #D4D6D9; }
     .loginForm input:hover {
-      border-bottom: 1px solid green; }
-    .loginForm input:active {
-      border-bottom: 1px solid green; }
+      border-bottom: 1px solid #686E7A; }
+    .loginForm input:focus {
+      border-bottom: 1px solid #686E7A; }
 
 /*# sourceMappingURL=style.css.map */
