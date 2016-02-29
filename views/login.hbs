@@ -1,12 +1,16 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
-
 <div class="loginForm">
+    <h1>{{title}}</h1>
+
     <form action="#">
         <label for="email">Email:</label><br>
         <input type="email" name="email" placeholder="Enter your email address"><br>
-        <label for="password">Password:</label><br>
+        <label for="password">Password:</label>
+        <label class="passwordReset"><a href="#">Forgot my password</a></label><br>
         <input type="password" name="password" placeholder="Enter your password"><br>
-        <input class="loginSubmit" type="submit" value="Login">
+        
+        <div class="center">
+            <a href="/" class="loginCancel">Back</a>
+            <input class="loginSubmit" type="submit" value="Login">
+        </div>
     </form>
 </div>
