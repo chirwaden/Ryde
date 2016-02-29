@@ -46,12 +46,12 @@ a {
     background-color: #f6f7f7; }
     .loginForm input.loginSubmit:hover {
       border-radius: 2px;
-      background-color: #d4d6d9;
+      background-color: #e9eaec;
       transition: 0.3s;
       border: none; }
     .loginForm input.loginSubmit:focus {
       border-radius: 2px;
-      background-color: #d4d6d9;
+      background-color: #e9eaec;
       transition: 0.3s;
       border: none; }
   .loginForm a.loginCancel {
@@ -70,12 +70,12 @@ a {
       border-radius: 2px;
       background-color: transparent;
       transition: 0.3s;
-      border: 1px solid #d4d6d9; }
+      border: 1px solid #e9eaec; }
     .loginForm a.loginCancel:focus {
       border-radius: 2px;
       background-color: transparent;
       transition: 0.3s;
-      border: 1px solid #d4d6d9; }
+      border: 1px solid #e9eaec; }
   .loginForm input {
     padding: 15px 0px;
     width: 500px;
