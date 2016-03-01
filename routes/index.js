@@ -3,7 +3,22 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Ryde' });
+  res.render('index', { title: 'Rydeapp.com' });
+});
+
+/* GET login page. */
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Ryde Login' });
+});
+
+/* GET users listing. */
+router.get('/users', function(req, res, next) {
+  res.send('respond with a resource');
+});
+
+/* GET platform page. */
+router.get('/platform', function(req, res, next) {
+  res.render('platform', { title: 'Platform' });
 });
 
 module.exports = router;

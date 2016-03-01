@@ -6,10 +6,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var routes = require('./routes/index');
-var login = require('./routes/login');
-var users = require('./routes/users');
-var platform = require('./routes/platform');
-
 var app = express();
 
 // view engine setup
@@ -31,9 +27,6 @@ app.use(require('node-sass-middleware')({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/login', login);
-app.use('/users', users);
-app.use('/platform', platform);
 
 
 // catch 404 and forward to error handler
