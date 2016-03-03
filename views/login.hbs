@@ -1,15 +1,18 @@
-<div class="loginForm">
-    <h1>{{title}}</h1>
+<div class="login-page">
+    <div class="loginForm">
+        <div class="login-logo"><img class="ryde-logo" src="/images/ryde-logo.svg"></div>
 
-    <form action="#">
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" placeholder="Enter your email address"><br>
-        <label for="password">Password:</label>
-        <label class="passwordReset"><a href="#">Forgot my password</a></label><br>
-        <input type="password" name="password" placeholder="Enter your password"><br>
-        <div class="center">
-            <a href="/" class="loginCancel">Back</a>
-            <input class="loginSubmit" type="submit" value="Login">
-        </div>
-    </form>
+        <form action="/platform">
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" placeholder="Enter your email address"><br>
+            <label for="password">Password:</label>
+            <label class="passwordReset"><a href="#">Forgot my password</a></label><br>
+            <input type="password" name="password" placeholder="Enter your password"><br>
+
+            <div class="center">
+                <a href="/" class="loginCancel">Back</a>
+                <input class="loginSubmit" type="submit" value="Login">
+            </div>
+        </form>
+    </div>
 </div>
