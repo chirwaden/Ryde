@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 .login-page {
   width: 100%;
   height: 100%;
@@ -107,65 +106,84 @@
       .login-page .loginForm input:active {
         border-bottom: 1px solid #439f47; }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.platform-page {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  background-color: #f6f7f7;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: flex-start; }
-  .platform-page logo {
-    float: left;
-    padding: 0px 15px; }
-    .platform-page logo img {
-      position: relative;
-      top: 10px;
-      height: 30px; }
-  .platform-page header {
+.platform-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  height: 100%; }
+  .platform-container header {
     height: 50px;
-    background: #439f47; }
-  .platform-page content {
-    margin: 30px; }
-  .platform-page user {
-    float: right;
-    border-left: 1px solid #54a858;
-    padding-left: 30px;
-    cursor: pointer; }
-    .platform-page user:hover {
-      background-color: #54a858;
-      transition: 0.3s; }
-    .platform-page user:active {
-      background-color: #3d9043;
-      transition: 0.3s; }
-    .platform-page user .user-button {
-      height: 50px;
-      width: auto;
-      padding: 0px 30px; }
-    .platform-page user span {
-      position: relative;
-      color: white;
-      font-weight: 300;
-      display: inline;
-      padding-right: 30px;
-      top: 14px; }
-    .platform-page user .user-initials {
-      padding: 8px;
-      width: 50px;
-      height: 50px;
-      background-color: #e9eaec;
+    background: #439f47;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; }
+    .platform-container header logo {
+      float: left;
+      padding: 0px 15px; }
+      .platform-container header logo img {
+        position: relative;
+        top: 10px;
+        height: 30px; }
+    .platform-container header user {
       float: right;
-      margin: auto;
-      font-size: 1.5em;
-      font-weight: 600;
-      color: #bec0c6; }
-    .platform-page user footer {
-      justify-content: flex-end; }
+      border-left: 1px solid #54a858;
+      padding-left: 30px;
+      cursor: pointer; }
+      .platform-container header user:hover {
+        background-color: #54a858;
+        transition: 0.3s; }
+      .platform-container header user:active {
+        background-color: #3d9043;
+        transition: 0.3s; }
+      .platform-container header user .user-button {
+        height: 50px;
+        width: auto;
+        padding: 0px 30px; }
+      .platform-container header user span {
+        position: relative;
+        color: white;
+        font-weight: 300;
+        display: inline;
+        padding-right: 30px;
+        top: 14px; }
+      .platform-container header user .user-initials {
+        padding: 8px;
+        width: 50px;
+        height: 50px;
+        background-color: #e9eaec;
+        float: right;
+        margin: auto;
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #bec0c6; }
+  .platform-container aside {
+    background-color: #f6f7f7;
+    width: 250px;
+    height: 100%;
+    padding: 30px;
+    float: left;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: stretch;
+    order: 2; }
+  .platform-container main {
+    padding: 50px;
+    float: right;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    order: 3; }
+  .platform-container footer {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    background-color: #f6f7f7;
+    flex-direction: row;
+    order: 4;
+    align-self: flex-end; }
 
 * {
   padding: 0;
