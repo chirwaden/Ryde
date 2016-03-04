@@ -17,8 +17,8 @@ router.get('/users', function(req, res, next) {
 });
 
 /* GET platform page. */
-router.get('/platform', function(req, res, next) {
-  res.render('platform', { title: 'Platform' });
+router.get('/console', function(req, res, next) {
+  res.render('console', { title: 'Console' });
 });
 
 module.exports = router;
