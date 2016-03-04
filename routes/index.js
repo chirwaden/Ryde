@@ -11,6 +11,11 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Login' });
 });
 
+/* GET login page. */
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'Register' });
+});
+
 /* GET users listing. */
 router.get('/users', function(req, res, next) {
   res.send('respond with a resource');
