@@ -107,49 +107,45 @@
       .login-page .loginForm input:active {
         border-bottom: 1px solid #439f47; }
 
-.platform-container {
-  padding: 0;
-  margin: 0;
+.console-container {
   list-style: none;
-  height: 100%; }
-  .platform-container header {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+  .console-container header {
     height: 50px;
     background: #439f47;
-    display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%; }
-    .platform-container header logo {
+    width: 100vw; }
+    .console-container header logo {
       float: left;
       padding: 0px 15px; }
-      .platform-container header logo img {
+      .console-container header logo img {
         position: relative;
         top: 10px;
         height: 30px; }
-    .platform-container header user {
+    .console-container header user {
       float: right;
       border-left: 1px solid #54a858;
       padding-left: 30px;
       cursor: pointer; }
-      .platform-container header user:hover {
+      .console-container header user:hover {
         background-color: #54a858;
         transition: 0.3s; }
-      .platform-container header user:active {
+      .console-container header user:active {
         background-color: #3d9043;
         transition: 0.3s; }
-      .platform-container header user .user-button {
+      .console-container header user .user-button {
         height: 50px;
         width: auto;
         padding: 0px 30px; }
-      .platform-container header user span {
+      .console-container header user span {
         position: relative;
         color: white;
         font-weight: 300;
         display: inline;
         padding-right: 30px;
         top: 14px; }
-      .platform-container header user .user-initials {
+      .console-container header user .user-initials {
         padding: 8px;
         width: 50px;
         height: 50px;
@@ -159,32 +155,25 @@
         font-size: 1.5em;
         font-weight: 600;
         color: #bec0c6; }
-  .platform-container aside {
-    background-color: #f6f7f7;
-    width: 250px;
-    height: 100%;
-    padding: 30px;
-    float: left;
+  .console-container .console-body {
     display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    align-items: stretch;
-    order: 2; }
-  .platform-container main {
-    padding: 50px;
-    float: right;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    order: 3; }
-  .platform-container footer {
-    display: flex;
-    width: 100%;
+    flex: 1; }
+    .console-container .console-body nav {
+      background-color: #f6f7f7;
+      width: 250px;
+      flex: 0 0 16em; }
+      .console-container .console-body nav li {
+        padding: 0px 30px;
+        height: 44px;
+        border-bottom: 1px solid #e9eaec;
+        vertical-align: middle; }
+    .console-container .console-body .console-main {
+      padding: 50px;
+      float: right; }
+  .console-container footer {
+    width: 100vw;
     height: 44px;
-    background-color: #f6f7f7;
-    flex-direction: row;
-    order: 4;
-    align-self: flex-end; }
+    background-color: #f6f7f7; }
 
 * {
   padding: 0;
