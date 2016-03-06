@@ -107,65 +107,74 @@
       .login-page .loginForm input:active {
         border-bottom: 1px solid #439f47; }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-.platform-page {
-  width: 100%;
-  height: 100%;
+.console-container {
+  list-style: none;
   display: flex;
-  background-color: #f6f7f7;
-  box-sizing: border-box;
-  flex-direction: column;
-  justify-content: flex-start; }
-  .platform-page logo {
-    float: left;
-    padding: 0px 15px; }
-    .platform-page logo img {
-      position: relative;
-      top: 10px;
-      height: 30px; }
-  .platform-page header {
+  min-height: 100vh;
+  flex-direction: column; }
+  .console-container header {
     height: 50px;
-    background: #439f47; }
-  .platform-page content {
-    margin: 30px; }
-  .platform-page user {
-    float: right;
-    border-left: 1px solid #54a858;
-    padding-left: 30px;
-    cursor: pointer; }
-    .platform-page user:hover {
-      background-color: #54a858;
-      transition: 0.3s; }
-    .platform-page user:active {
-      background-color: #3d9043;
-      transition: 0.3s; }
-    .platform-page user .user-button {
-      height: 50px;
-      width: auto;
-      padding: 0px 30px; }
-    .platform-page user span {
-      position: relative;
-      color: white;
-      font-weight: 300;
-      display: inline;
-      padding-right: 30px;
-      top: 14px; }
-    .platform-page user .user-initials {
-      padding: 8px;
-      width: 50px;
-      height: 50px;
-      background-color: #e9eaec;
+    background: #439f47;
+    width: 100vw; }
+    .console-container header logo {
+      float: left;
+      padding: 0px 15px; }
+      .console-container header logo img {
+        position: relative;
+        top: 10px;
+        height: 30px; }
+    .console-container header user {
       float: right;
-      margin: auto;
-      font-size: 1.5em;
-      font-weight: 600;
-      color: #bec0c6; }
-    .platform-page user footer {
-      justify-content: flex-end; }
+      border-left: 1px solid #54a858;
+      padding-left: 30px;
+      cursor: pointer; }
+      .console-container header user:hover {
+        background-color: #54a858;
+        transition: 0.3s; }
+      .console-container header user:active {
+        background-color: #3d9043;
+        transition: 0.3s; }
+      .console-container header user .user-button {
+        height: 50px;
+        width: auto;
+        padding: 0px 30px; }
+      .console-container header user span {
+        position: relative;
+        color: white;
+        font-weight: 300;
+        display: inline;
+        padding-right: 30px;
+        top: 14px; }
+      .console-container header user .user-initials {
+        padding: 8px;
+        width: 50px;
+        height: 50px;
+        background-color: #e9eaec;
+        float: right;
+        margin: auto;
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #bec0c6; }
+  .console-container .console-body {
+    display: flex;
+    flex: 1; }
+    .console-container .console-body nav {
+      background-color: #f6f7f7;
+      width: 250px;
+      flex: 0 0 16em; }
+      .console-container .console-body nav li {
+        padding: 0px 30px;
+        height: 44px;
+        line-height: 44px;
+        border-bottom: 1px solid #e9eaec;
+        vertical-align: middle; }
+    .console-container .console-body .console-main {
+      padding: 50px;
+      float: right; }
+  .console-container footer {
+    width: 100vw;
+    height: 44px;
+    background-color: #f6f7f7; }
 
 * {
   padding: 0;
