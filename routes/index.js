@@ -14,6 +14,7 @@ router.get('/login', function(req, res, next) {
   res.render('login', { title: 'Login' });
 });
 
+<<<<<<< HEAD
 /* POST login page. */
 router.post('/login', passport.authenticate('local'), function(req, res) {
     
@@ -25,6 +26,11 @@ router.post('/login', passport.authenticate('local'), function(req, res) {
 router.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');
+=======
+/* GET login page. */
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'Register' });
+>>>>>>> master
 });
 
 /* GET users listing. */
