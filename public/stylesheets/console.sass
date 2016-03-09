@@ -1,0 +1,93 @@
+.console-container
+    list-style: none
+    display: flex
+    min-height: 100vh
+    flex-direction: column
+
+    // width: 100%
+    // height: 100%
+    // background-color: $grey1
+    // box-sizing: border-box
+    // display: flex
+
+    header
+        height: 50px
+        background: $green10
+        width: 100vw
+
+        logo
+            float: left
+            padding: 0px 15px
+
+            img
+                position: relative
+                top: 10px
+                height: 30px
+
+        user
+            float: right
+            border-left: 1px solid $green9
+            padding-left: 30px
+            cursor: pointer
+
+            &:hover
+                background-color: $green9
+                transition: 0.3s
+
+            &:active
+                background-color: $green11
+                transition: 0.3s
+
+            .user-button
+                height: 50px
+                width: auto
+                padding: 0px 30px
+
+            span
+                position: relative
+                color: white
+                font-weight: 300
+                display: inline
+                padding-right: 30px
+                top: 14px
+
+            .user-initials
+                padding: 8px
+                width: 50px
+                height: 50px
+                background-color: $grey2
+                float: right
+                margin: auto
+                font-size: 1.5em
+                font-weight: 600
+                color: $grey4
+
+    .console-body
+        display: flex
+        flex: 1
+
+        nav
+            background-color: $grey1
+            width: 250px
+
+            flex: 0 0 16em
+
+            li
+                padding: 0px 30px
+                height: 44px
+                line-height: 44px
+                border-bottom: 1px solid $grey2
+                vertical-align: middle
+
+
+
+        .console-main
+            padding: 50px
+            float: right
+
+
+
+    footer
+        width: 100vw
+        height: 44px
+        background-color: $grey1
