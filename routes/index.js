@@ -10,16 +10,17 @@ router.get('/', function(req, res, next) {
 
 /* GET login page. */
 router.get('/login', function(req, res, next) {
- 
   res.render('login', { title: 'Login' });
 });
 
 /* POST login page. */
-router.post('/login', passport.authenticate('local'), function(req, res) {
-    
-    
-    res.redirect('/console');
-});
+router.post('/login', 
+     passport.authenticate('local'), 
+     function (req, res){
+         //Successful authentication
+         res.render('console', { user: req.user });
+     }   
+);
 
 /* GET logout page. */
 router.get('/logout', function(req, res) {
@@ -50,10 +51,17 @@ router.post('/register', function(req, res) {
     });
   });
 
-
 /* GET console page. */
-router.get('/console', function(req, res, next) {
-  res.render('console', { title: 'Console' });
+router.get('/console', isAuthenticated, function(req, res, next) {
+    res.render('console', { user: req.user });
 });
 
 module.exports = router;
+
+function isAuthenticated(req, res, next) {
+    if (!req.user){
+        res.redirect('/login');
+    }else{
+        next();
+    }
+}
