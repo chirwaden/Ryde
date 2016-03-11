@@ -14,13 +14,25 @@ router.get('/login', function(req, res, next) {
 });
 
 /* POST login page. */
-router.post('/login', 
-     passport.authenticate('local'), 
-     function (req, res){
-         //Successful authentication
-         res.render('console', { user: req.user });
-     }   
-);
+router.post('/login', function(req, res, next) {
+  passport.authenticate('local', function(err, user, info) {
+        if (err) { 
+            res.render('login', { message: err.message }); 
+        }
+        if (!user) { 
+            res.render('login', { 
+                failure: true,
+                badPassword: true,
+                message: "Sorry, that password isn't right" 
+            });
+        }
+    req.logIn(user, function(err) {
+      if (err) { return next(err); }
+        res.render('console', { user: req.user });
+    });
+  })(req, res, next);
+});
+
 
 /* GET logout page. */
 router.get('/logout', function(req, res) {
