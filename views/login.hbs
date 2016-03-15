@@ -6,6 +6,7 @@
             <label for="email">Email:</label><br>
             <input  {{#if noUsername}} class="error-input" {{/if}} type="email" name="username" placeholder="Enter your email address">
             {{#if noUsername}}
+            <input class="error-input" type="email" name="email" placeholder="Enter your email address">
             <span class="error-img">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 44 39.6 39.6">
                     <path d="M17.6 63.8l17 17-2.8 2.8-17-17-17 17-2.8-2.8 17-17-17-17 2.8-2.8 17 17 17-17 2.8 2.8-17 17z" class="small-cross"/>
@@ -25,6 +26,7 @@
             <label class="passwordReset"><a href="#">Forgot my password</a></label><br>
             <input {{#if badPassword}} class="error-input"{{/if}} type="password" name="password" placeholder="Enter your password">
             {{#if badPassword}}
+            <input class="error-input" type="password" name="password" placeholder="Enter your password">
             <span class="error-img">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 44 39.6 39.6">
                     <path d="M17.6 63.8l17 17-2.8 2.8-17-17-17 17-2.8-2.8 17-17-17-17 2.8-2.8 17 17 17-17 2.8 2.8-17 17z" class="small-cross"/>

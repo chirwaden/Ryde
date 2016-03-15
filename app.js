@@ -11,7 +11,6 @@ var assert = require('assert');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
-
 var routes = require('./routes/index');
 
 var app = express();
